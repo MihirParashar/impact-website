@@ -6,7 +6,7 @@ nav.innerHTML = `
     </a>
     <ul style="display: flex; list-style: none; gap: 2rem; margin: 0; padding: 0;">
       <li><a href="index.html">Home</a></li>
-      <li><a href="graphs.html">Graphs</a></li>
+      <li><a href="methods.html">Methods</a></li>
       <li><a href="results.html">Results</a></li>
       <li><a href="conclusion.html">Conclusion</a></li>
     </ul>
@@ -25,7 +25,7 @@ nav.querySelectorAll("a").forEach((link) => {
   link.style.textDecoration = "none";
   link.style.fontWeight = "600";
   link.style.transition = "color 0.3s ease";
-  link.addEventListener("mouseenter", () => (link.style.color = "#a7f3d0")); // soft green hover
+  link.addEventListener("mouseenter", () => (link.style.color = "#ffffff"));
   link.addEventListener("mouseleave", () => (link.style.color = "white"));
 });
 
