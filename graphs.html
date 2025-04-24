@@ -1,54 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Graphs - Carbon Footprint Study</title>
-  <link rel="stylesheet" href="styles.css" />
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-</head>
-<body>
-  <header class="fade-in">
-    <h1>Graphs</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Graphs - Carbon Footprint Study</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
     <script src="navbar.js"></script>
-  </header>
-  <main class="fade-in">
-    <section>
-      <h2>Visual Data Representation</h2>
-      <canvas id="carbonIncomeChart" width="600" height="400"></canvas>
-    </section>
-  </main>
-  <footer class="fade-in">
-    <p>&copy; 2025 Mihir Parashar, Atharv Kanchi, Shihan Cheng</p>
-  </footer>
-  <script>
-    const ctx = document.getElementById('carbonIncomeChart');
-    const chart = new Chart(ctx, {
-      type: 'scatter',
-      data: {
-        datasets: [{
-          label: 'Carbon Footprint vs. Average Income',
-          data: [], // fill with {x: income, y: footprint} pairs
-          backgroundColor: 'rgba(75, 192, 192, 0.6)'
-        }]
-      },
-      options: {
-        scales: {
-          x: {
-            title: {
-              display: true,
-              text: 'Average Income (USD)'
-            }
+    <main>
+      <section>
+        <h2>Visual Data Representation</h2>
+        <canvas id="carbonIncomeChart" width="600" height="400"></canvas>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2025 Mihir Parashar, Atharv Kanchi, Shihan Cheng</p>
+    </footer>
+    <script>
+      const ctx = document.getElementById("carbonIncomeChart");
+      const chart = new Chart(ctx, {
+        type: "scatter",
+        data: {
+          datasets: [
+            {
+              label: "Carbon Footprint vs. Average Income",
+              data: [], // fill with {x: income, y: footprint} pairs
+              backgroundColor: "rgba(75, 192, 192, 0.6)",
+            },
+          ],
+        },
+        options: {
+          scales: {
+            x: {
+              title: {
+                display: true,
+                text: "Average Income (USD)",
+              },
+            },
+            y: {
+              title: {
+                display: true,
+                text: "Carbon Footprint (tons CO2e)",
+              },
+            },
           },
-          y: {
-            title: {
-              display: true,
-              text: 'Carbon Footprint (tons CO2e)'
-            }
-          }
-        }
-      }
-    });
-  </script>
-</body>
+        },
+      });
+    </script>
+  </body>
 </html>
