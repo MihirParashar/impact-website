@@ -14,7 +14,7 @@ nav.innerHTML = `
 `;
 
 // Basic nav styling
-nav.style.background = "#064e3b"; // dark green
+nav.style.background = "#1e263e"; // dark green
 nav.style.width = "100%";
 nav.style.boxShadow = "0 2px 4px rgba(0,0,0,0.1)";
 nav.style.borderBottom = "1px solid #033c29";
