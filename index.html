@@ -379,20 +379,42 @@
               </p>
               <ul class="list-disc pl-6 space-y-2">
                 <li>
-                  <strong>Income-Emission Relationship:</strong> [Key finding
-                  about correlation strength and direction]
+                  <strong>Income-Emission Relationship:</strong> The Pearson
+                  correlation between household income and carbon emissions was
+                  found to be <span id="income-stat">-0.1295</span>, indicating
+                  a negative linear correlation with a p-value of 1,408e-103,
+                  suggesting a statistically significant relationship of higher
+                  household income associated with slightly lower carbon
+                  emissions.
+                  <br />
+                  <br />
                 </li>
                 <li>
-                  <strong>Geographic Variations:</strong> [Findings about
-                  regional differences]
+                  <strong>Geographic Variations:</strong> CO2 Per Household
+                  decreases in this order across the United States: <br />
+                  Midwest - 0.1022 tCO2e/year <br />
+                  West - 0.0861 tCO2e/year <br />
+                  South - 0.0686 tCO2e/year <br />
+                  Northeast - 0.0640 tCO2e/year <br />
+                  This suggests that geographic factors play a significant role
+                  in carbon emissions, especially in areas with large
+                  transportation sectors and energy-intensive economies.
+                  <br />
+                  <br />
                 </li>
                 <li>
-                  <strong>Contributing Factors:</strong> [Main drivers of higher
-                  emissions in different income brackets]
-                </li>
-                <li>
-                  <strong>Temporal Trends:</strong> [How the relationship has
-                  changed over time]
+                  <strong>Contributing Factors:</strong> Our data doesn't
+                  directly show factors causation, but there are some variables
+                  we can infer: <br />
+                  Low income areas tend to have older housing stock, which is
+                  less energy-efficient, and lower access to public
+                  transportation, leading to higher reliance on personal
+                  vehicles. <br />
+                  Higher income areas tend to have more access to renewable
+                  energy sources and energy-efficient appliances, which
+                  contribute to lower carbon footprints.
+                  <br />
+                  <br />
                 </li>
               </ul>
             </div>
@@ -430,11 +452,12 @@
                   />
                   <div class="carousel-caption mt-4">
                     <h3 class="font-bold text-lg">
-                      Total Emissions by Income Bracket
+                      Average CO2 Per Capita by Population Bin
                     </h3>
                     <p>
-                      Total carbon dioxide emissions from low, middle, and high
-                      income brackets.
+                      Groups ZIP codes into 4 different population bins (4
+                      quartiles of data), and displays average CO2 emisisons per
+                      person in each ZIP code per population bin.
                     </p>
                   </div>
                 </div>
@@ -456,18 +479,15 @@
                 </div>
                 <div class="carousel-item p-4">
                   <img
-                    src="graphs/co2_share_by_income_tier.png"
+                    src="graphs/boxplot_income_brackets.png"
                     alt="Graph 1"
                     class="rounded-lg shadow-md"
                   />
                   <div class="carousel-caption mt-4">
-                    <h3 class="font-bold text-lg">
-                      Income vs. Carbon Footprint Correlation
-                    </h3>
+                    <h3 class="font-bold text-lg">Share by Income Tier</h3>
                     <p>
-                      This graph illustrates the relationship between median
-                      household income and average carbon footprint across
-                      different counties.
+                      Box plot showing the mean and spread of carbon emissions
+                      per income group.
                     </p>
                   </div>
                 </div>
@@ -479,12 +499,13 @@
                   />
                   <div class="carousel-caption mt-4">
                     <h3 class="font-bold text-lg">
-                      Income vs. Carbon Footprint Correlation
+                      Income Distribution across ZIP Codes
                     </h3>
                     <p>
                       This graph illustrates the relationship between median
                       household income and average carbon footprint across
-                      different counties.
+                      different counties, showing how large the middle class is,
+                      potentially acting as a target for future interventions.
                     </p>
                   </div>
                 </div>
@@ -510,28 +531,36 @@
                 </thead>
                 <tbody>
                   <tr class="border-b">
-                    <td class="py-3 px-4">Household Income</td>
-                    <td class="py-3 px-4">[value]</td>
-                    <td class="py-3 px-4">[value]</td>
-                    <td class="py-3 px-4">[level]</td>
+                    <td class="py-3 px-4">
+                      Household Income vs. Household CO2
+                    </td>
+                    <td class="py-3 px-4">-0.1295</td>
+                    <td class="py-3 px-4">1.408e-103</td>
+                    <td class="py-3 px-4">Highly significant (p < 0.001)</td>
                   </tr>
                   <tr class="border-b bg-gray-50">
-                    <td class="py-3 px-4">Housing Age</td>
-                    <td class="py-3 px-4">[value]</td>
-                    <td class="py-3 px-4">[value]</td>
-                    <td class="py-3 px-4">[level]</td>
+                    <td class="py-3 px-4">Latitude vs. Household CO2</td>
+                    <td class="py-3 px-4">0.1498</td>
+                    <td class="py-3 px-4">3.228e-138</td>
+                    <td class="py-3 px-4">Highly significant (p < 0.001)</td>
                   </tr>
                   <tr class="border-b">
-                    <td class="py-3 px-4">Vehicle Age</td>
-                    <td class="py-3 px-4">[value]</td>
-                    <td class="py-3 px-4">[value]</td>
-                    <td class="py-3 px-4">[level]</td>
+                    <td class="py-3 px-4">
+                      Population Density vs. Per Capita CO2
+                    </td>
+                    <td class="py-3 px-4">-0.2323</td>
+                    <td class="py-3 px-4">0</td>
+                    <td class="py-3 px-4">Highly significant (p < 0.001)</td>
                   </tr>
                   <tr class="border-b bg-gray-50">
-                    <td class="py-3 px-4">Public Transit Access</td>
-                    <td class="py-3 px-4">[value]</td>
-                    <td class="py-3 px-4">[value]</td>
-                    <td class="py-3 px-4">[level]</td>
+                    <td class="py-3 px-4">
+                      Income Bracket (Low vs. High) vs. Household CO2
+                    </td>
+                    <td class="py-3 px-4">
+                      t = 14.134, Delta = 0.053 tons higher for low income
+                    </td>
+                    <td class="py-3 px-4">3.153e-40</td>
+                    <td class="py-3 px-4">Highly significant (p < 0.001)</td>
                   </tr>
                 </tbody>
               </table>
@@ -548,13 +577,23 @@
               </p>
               <ul class="list-disc pl-6 space-y-2">
                 <li>
-                  <strong>Finding 1:</strong> [Description of unexpected result]
+                  <strong>Finding 1:</strong> The weak negative correlation
+                  between household income and carbon footprint at the household
+                  level is an unexpected discovery, but still supports our
+                  hypothesis. Conventional assumptions often suggest a positive
+                  correlation.
                 </li>
                 <li>
-                  <strong>Finding 2:</strong> [Description of unexpected result]
+                  <strong>Finding 2:</strong> The top 10 highest carbon-emitting
+                  cities on average had around ~15k population with
+                  middle-to-low-class incomes, which differed from our
+                  expectation of high population cities to emit more on average.
                 </li>
                 <li>
-                  <strong>Finding 3:</strong> [Description of unexpected result]
+                  <strong>Finding 3:</strong> The significant regional
+                  variations in household carbon footprints, with the Midwest
+                  showing the highest average, as variation between region
+                  wasn't expected to play as large a role as it did.
                 </li>
               </ul>
               <p class="mt-4">
