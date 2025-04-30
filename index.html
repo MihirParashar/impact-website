@@ -182,7 +182,9 @@
                 <i class="fas fa-smog mr-2"></i
                 ><span id="emission-stat">206%</span>
               </div>
-              <h3 class="text-xl font-semibold mb-2">Carbon Emission</h3>
+              <h3 class="text-xl font-semibold mb-2">
+                Carbon Emission Difference
+              </h3>
               <p>
                 Average carbon footprint difference between highest and lowest
                 income areas.
@@ -408,8 +410,9 @@
               <ul class="list-disc pl-6 mt-2 space-y-1">
                 <li>Pearson correlation coefficient</li>
                 <li>Multiple regression analysis</li>
-                <li>Geospatial clustering</li>
-                <li>Time series analysis for trend identification</li>
+                <li>Nonlinear and linear curve fitting</li>
+                <li>Means-clustering distributions</li>
+                <li>Gini coefficients</li>
               </ul>
             </div>
             <div class="bg-white p-6 rounded-lg shadow">
@@ -418,11 +421,52 @@
                 To analyze the data efficiently, we used these technologies:
               </p>
               <ul class="list-disc pl-6 mt-2 space-y-1">
-                <li>Python</li>
-                <li>Pandas</li>
-                <li>NumPy</li>
-                <li>Matplotlib</li>
-                <li>Regional policy differences</li>
+                <li>
+                  Python
+                  <ul class="list-circle pl-6 mt-1 space-y-1">
+                    <li>
+                      Modern, sleek, and optimal programming language for data
+                      analysis.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  Pandas
+                  <ul class="list-circle pl-6 mt-1 space-y-1">
+                    <li>
+                      Python library for importing, cleaning, and analyzing
+                      data.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  NumPy
+                  <ul class="list-circle pl-6 mt-1 space-y-1">
+                    <li>
+                      Premier Python library for numerical and mathematical
+                      operations.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  Matplotlib
+                  <ul class="list-circle pl-6 mt-1 space-y-1">
+                    <li>
+                      Universally used Python library for plotting and graphing
+                      various modalities of information.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  Seaborn
+                  <ul class="list-circle pl-6 mt-1 space-y-1">
+                    <li>
+                      Python library for visualizing data distributions,
+                      relationships between variables, and identifying patterns
+                      or anomalies.
+                    </li>
+                  </ul>
+                </li>
               </ul>
             </div>
           </div>
@@ -581,12 +625,12 @@
             </div>
           </div>
 
-          <div class="mb-12">
-            <h2 class="text-2xl font-semibold mb-4 text-blue-custom">
+          <div class="mb-16">
+            <h2 class="text-2xl font-semibold mb-6 text-blue-custom">
               Statistical Analysis
             </h2>
             <div class="overflow-x-auto">
-              <table class="min-w-full bg-white rounded-lg shadow-md">
+              <table class="mb06 min-w-full bg-white rounded-lg shadow-md">
                 <thead class="bg-blue-custom text-white">
                   <tr>
                     <th class="py-3 px-4 text-left">Variable</th>
@@ -631,6 +675,73 @@
                 </tbody>
               </table>
             </div>
+
+            <!-- Income Bracket CO2 Data Table -->
+            <div class="mt-6">
+              <h2 class="text-2xl font-semibold mb-4 text-blue-custom">
+                Income Bracket CO2 Data
+              </h2>
+              <div class="overflow-x-auto">
+                <table class="min-w-full bg-white rounded-lg shadow-md">
+                  <thead class="bg-blue-custom text-white">
+                    <tr>
+                      <th class="py-3 px-4 text-left">Income Bracket</th>
+                      <th class="py-3 px-4 text-left">
+                        CO2 per Household_mean
+                      </th>
+                      <th class="py-3 px-4 text-left">
+                        CO2 per Household_median
+                      </th>
+                      <th class="py-3 px-4 text-left">
+                        CO2 per Household_count
+                      </th>
+                      <th class="py-3 px-4 text-left">
+                        Total Household Carbon Footprint_tCO2e_sum
+                      </th>
+                      <th class="py-3 px-4 text-left">
+                        Households Estimate_Mean_income_dollars_mean
+                      </th>
+                      <th class="py-3 px-4 text-left">
+                        HouseholdsPerZipCode_sum
+                      </th>
+                      <th class="py-3 px-4 text-left">Household Percentage</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="border-b">
+                      <td class="py-3 px-4">High</td>
+                      <td class="py-3 px-4">0.0497533612513496</td>
+                      <td class="py-3 px-4">0.0175803005775077</td>
+                      <td class="py-3 px-4">533</td>
+                      <td class="py-3 px-4">35062.1677197517</td>
+                      <td class="py-3 px-4">194428.3583489681</td>
+                      <td class="py-3 px-4">2441439</td>
+                      <td class="py-3 px-4">2.82</td>
+                    </tr>
+                    <tr class="border-b bg-gray-50">
+                      <td class="py-3 px-4">Low</td>
+                      <td class="py-3 px-4">0.1028591790139247</td>
+                      <td class="py-3 px-4">0.0540650557936163</td>
+                      <td class="py-3 px-4">6809</td>
+                      <td class="py-3 px-4">306048.5025555229</td>
+                      <td class="py-3 px-4">42005.9494786312</td>
+                      <td class="py-3 px-4">15054699</td>
+                      <td class="py-3 px-4">17.41</td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-3 px-4">Mid</td>
+                      <td class="py-3 px-4">0.0746568279975023</td>
+                      <td class="py-3 px-4">0.0341573973966474</td>
+                      <td class="py-3 px-4">20273</td>
+                      <td class="py-3 px-4">1044764.1689982208</td>
+                      <td class="py-3 px-4">71912.0712774133</td>
+                      <td class="py-3 px-4">68962565</td>
+                      <td class="py-3 px-4">79.76</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
           </div>
 
           <div>
@@ -673,185 +784,135 @@
       </div>
 
       <!-- Conclusions Page -->
-      <div id="conclusions" class="page">
-        <div class="max-w-4xl mx-auto">
-          <h1 class="text-4xl font-bold mb-8 text-center">
-            Conclusions & Future Implications
+      <section id="conclusions" class="page">
+        <div class="max-w-4xl mx-auto space-y-12">
+          <h1 class="text-4xl font-bold text-center text-black">
+            Conclusions & Future Directions
           </h1>
-
-          <div class="mb-12">
-            <h2 class="text-2xl font-semibold mb-4 text-blue-custom">
-              Research Conclusions
-            </h2>
-            <div class="bg-white p-6 rounded-lg shadow-md mb-6">
-              <p class="mb-4">
-                Based on our comprehensive analysis of the relationship between
-                household income and carbon footprint, we have reached the
-                following conclusions:
+          <div class="">
+            <img
+              src="https://www.treehugger.com/thmb/2LXyowJdHzwDGcUPPxw6NStkTDg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-157366413-36db61c23c0f4732809972e5a7dfa49f.jpg"
+              alt="Carbon footprint illustration"
+              class="rounded-lg shadow-lg"
+            />
+          </div>
+          <!-- Summary Cards -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div
+              class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition"
+            >
+              <h2 class="text-xl font-semibold mb-3 text-blue-custom">
+                Introduction Recap
+              </h2>
+              <p>
+                We set out to explore how household income correlates with
+                carbon emissions, aiming to inform equitable climate
+                interventions.
               </p>
-              <div class="space-y-4">
-                <div class="border-l-4 border-blue-custom pl-4">
-                  <h3 class="font-bold">Income-Emissions Pattern</h3>
-                  <p>
-                    Our data [confirms/challenges] the initial hypothesis that
-                    lower-income areas have higher carbon footprints.
-                    Specifically, we found that [key conclusion about the
-                    relationship].
-                  </p>
-                </div>
-                <div class="border-l-4 border-blue-custom pl-4">
-                  <h3 class="font-bold">Contributing Factors</h3>
-                  <p>
-                    The primary drivers of this relationship include [factor 1],
-                    [factor 2], and [factor 3], with [factor] having the
-                    strongest influence.
-                  </p>
-                </div>
-                <div class="border-l-4 border-blue-custom pl-4">
-                  <h3 class="font-bold">Geographical Variations</h3>
-                  <p>
-                    The relationship between income and carbon footprint varies
-                    significantly by [geographical criterion], with [areas]
-                    showing the most pronounced effect.
-                  </p>
-                </div>
-              </div>
+            </div>
+            <div
+              class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition"
+            >
+              <h2 class="text-xl font-semibold mb-3 text-blue-custom">
+                Methodology Recap
+              </h2>
+              <p>
+                Utilized ZIP-level income and CO₂ datasets, descriptive
+                statistics, and regression analyses to uncover trends.
+              </p>
+            </div>
+            <div
+              class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition"
+            >
+              <h2 class="text-xl font-semibold mb-3 text-blue-custom">
+                Key Results
+              </h2>
+              <p>
+                Identified a modest negative correlation: lower-income areas
+                tended to exhibit higher per-household emissions.
+              </p>
             </div>
           </div>
 
-          <div class="mb-12">
-            <h2 class="text-2xl font-semibold mb-4 text-blue-custom">
-              Proposed Solution
+          <!-- Improvement Opportunities -->
+          <div class="space-y-6">
+            <h2 class="text-2xl font-semibold text-blue-custom">
+              Areas for Improvement
             </h2>
-            <div class="bg-gray-50 p-6 rounded-lg mb-6">
-              <p class="mb-4">
-                Based on our findings, we have developed a software-based
-                solution to address carbon footprint challenges in low-income
-                areas:
-              </p>
-              <h3 class="font-bold text-xl mb-2">
-                EcoTrack: Community Carbon Management Platform
-              </h3>
-              <p class="mb-4">
-                EcoTrack is a cost-effective software solution designed to help
-                communities reduce their carbon footprint through:
-              </p>
-              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div class="bg-white p-4 rounded-lg shadow">
-                  <h4 class="font-bold mb-2">Energy Usage Optimization</h4>
-                  <p>
-                    Real-time monitoring and AI-powered suggestions for reducing
-                    household energy consumption without expensive renovations.
-                  </p>
-                </div>
-                <div class="bg-white p-4 rounded-lg shadow">
-                  <h4 class="font-bold mb-2">Community Resource Sharing</h4>
-                  <p>
-                    Platform for coordinating transportation, sharing
-                    energy-efficient appliances, and pooling resources for
-                    sustainability upgrades.
-                  </p>
-                </div>
-                <div class="bg-white p-4 rounded-lg shadow">
-                  <h4 class="font-bold mb-2">Education Portal</h4>
-                  <p>
-                    Accessible information on low-cost sustainability practices
-                    and behavioral changes to reduce carbon footprint.
-                  </p>
-                </div>
-                <div class="bg-white p-4 rounded-lg shadow">
-                  <h4 class="font-bold mb-2">Program Connector</h4>
-                  <p>
-                    Database of subsidies, grants, and assistance programs to
-                    help residents access existing sustainability resources.
-                  </p>
-                </div>
-              </div>
-            </div>
+            <ul class="list-disc list-inside space-y-2">
+              <li>Integrate 2025 data for more current insights.</li>
+              <li>Expand to globally diverse regions beyond the US.</li>
+              <li>
+                Leverage longitudinal datasets to visualize trends over time.
+              </li>
+              <li>
+                Apply advanced statistical tests (e.g., multivariate models).
+              </li>
+              <li>Collect data at the household level instead of ZIP codes.</li>
+            </ul>
           </div>
 
-          <div class="mb-12">
-            <h2 class="text-2xl font-semibold mb-4 text-blue-custom">
-              Policy Implications
+          <!-- Implications -->
+          <div class="space-y-6">
+            <h2 class="text-2xl font-semibold text-blue-custom">
+              Implications of This Work
             </h2>
-            <div class="bg-white p-6 rounded-lg shadow-md">
-              <p class="mb-4">
-                Our research has several important implications for policy
-                development:
-              </p>
-              <ul class="list-disc pl-6 space-y-2">
-                <li>
-                  <strong>Targeted Interventions:</strong> Policies should be
-                  tailored to address the specific factors driving higher
-                  emissions in low-income areas.
-                </li>
-                <li>
-                  <strong>Equity-Focused Approach:</strong> Carbon reduction
-                  efforts should prioritize accessibility and affordability to
-                  avoid exacerbating economic disparities.
-                </li>
-                <li>
-                  <strong>Infrastructure Investment:</strong> Public investment
-                  in sustainable infrastructure should prioritize underserved
-                  communities.
-                </li>
-                <li>
-                  <strong>Educational Initiatives:</strong> Community-based
-                  education programs can promote cost-effective carbon reduction
-                  strategies.
-                </li>
-                <li>
-                  <strong>Data-Driven Decision Making:</strong> Ongoing
-                  monitoring of income-emissions relationships should inform
-                  policy adjustments.
-                </li>
-              </ul>
-            </div>
+            <p>
+              Our findings highlight socioeconomic disparities in carbon
+              emissions, underscoring the need for policy measures that support
+              low-income households in adopting sustainable practices without
+              undue burden.
+            </p>
           </div>
 
-          <div>
-            <h2 class="text-2xl font-semibold mb-4 text-blue-custom">
+          <!-- Future Directions -->
+          <div class="space-y-6">
+            <h2 class="text-2xl font-semibold text-blue-custom">
               Future Research Directions
             </h2>
-            <div class="bg-gray-50 p-6 rounded-lg">
-              <p class="mb-4">
-                Building on our findings, future research should explore:
-              </p>
-              <div class="space-y-4">
-                <div>
-                  <h3 class="font-bold">Longitudinal Studies</h3>
-                  <p>
-                    Track how the income-emissions relationship changes over
-                    time, especially as green technologies become more
-                    accessible.
-                  </p>
-                </div>
-                <div>
-                  <h3 class="font-bold">Intervention Testing</h3>
-                  <p>
-                    Pilot and evaluate the effectiveness of our proposed
-                    software solution across different communities.
-                  </p>
-                </div>
-                <div>
-                  <h3 class="font-bold">Behavioral Factors</h3>
-                  <p>
-                    Investigate how behavioral and cultural factors interact
-                    with income to influence carbon footprints.
-                  </p>
-                </div>
-                <div>
-                  <h3 class="font-bold">Global Comparative Analysis</h3>
-                  <p>
-                    Extend the research to compare income-emissions
-                    relationships across different countries and economies.
-                  </p>
-                </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div
+                class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition"
+              >
+                <h3 class="font-semibold mb-2">Global Comparative Studies</h3>
+                <p>
+                  Analyze income-emissions relations across multiple countries
+                  and economic contexts.
+                </p>
+              </div>
+              <div
+                class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition"
+              >
+                <h3 class="font-semibold mb-2">Intervention Pilots</h3>
+                <p>
+                  Test targeted programs to gauge real-world emission reductions
+                  in diverse communities.
+                </p>
+              </div>
+              <div
+                class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition"
+              >
+                <h3 class="font-semibold mb-2">
+                  Behavioral & Cultural Factors
+                </h3>
+                <p>
+                  Investigate how local customs and behaviors modulate the
+                  income-emissions relationship.
+                </p>
+              </div>
+              <div
+                class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition"
+              >
+                <h3 class="font-semibold mb-2">Enhanced Data Resolution</h3>
+                <p>
+                  Incorporate household-level data and real-time monitoring for
+                  finer-grained insights.
+                </p>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </main>
 
     <!-- Footer -->
